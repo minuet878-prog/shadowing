@@ -6,5 +6,10 @@ class Practice:
     def run(self):
         while self.current_index < len(self.subtitles):
             print(self.subtitles[self.current_index]["text"])
-            input()
-            self.current_index += 1
+            print("按enter繼續,輸入q結束")
+            user_input = input()
+            if user_input == "q":
+                print("逐字稿請稍候")
+                break
+            else:
+                self.current_index += 1

@@ -14,6 +14,9 @@ def main():
     subtitles = p.get_dict()
     c = Practice(subtitles)
     c.run()
-
+    result = path.split(".")[0]
+    with open(result, "w") as f:
+        for i in subtitles:
+            f.write(i["text"]+"\n")
 if __name__ == "__main__":
     main()
