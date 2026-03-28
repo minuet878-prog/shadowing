@@ -27,4 +27,8 @@ class Downloader:
     @url.setter
     def url(self, s):
         #url regex
-        self._url = s
+        pattern2 = r"v=([\w-]{11})&?"
+        if re.search(pattern2, s) is None:
+            raise ValueError
+        else:
+            self._url = s
