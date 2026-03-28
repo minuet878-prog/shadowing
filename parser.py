@@ -15,5 +15,3 @@ class Parser:
                     if text != "" and (subtitle == [] or subtitle[-1]["text"]!= text):
                         subtitle.append({"start": start, "end": end, "text": text})
             return subtitle
-                    
-                    
