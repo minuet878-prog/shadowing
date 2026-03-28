@@ -3,7 +3,7 @@ class Parser:
         self.file = file
 
     def get_dict(self):
-        with open(self.file) as sub:
+        with open(self.file, encoding="utf-8") as sub:
             subtitle = []
             lines = sub.readlines()
             for i, line in enumerate(lines[:-1]):

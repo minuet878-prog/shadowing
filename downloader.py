@@ -8,7 +8,7 @@ class Downloader:
     def get_sub(self):
         ydl_opts = {
             "skip_download": True,
-            "write_subs": True,
+            "writesubtitles": True,
             "writeautomaticsub": True,
             "subtitleslangs": ["en"],
             "outtmpl": "%(id)s"
